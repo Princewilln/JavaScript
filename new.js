@@ -280,39 +280,39 @@ to get and set content? */
 // console.log(laugh(5))
 
 
-// const prices = [1.23, 48.11, 90.11, 8.50, 9.99, 1.00, 1.10, 67.00];
-// for (let index = 0; index < prices.length; index++){
-//   //change the value of first element
-//   if (index === 0) {
-//     prices[index] = prices[index] * 2;
-//   }
-//   //change the value of third element
-//   else if (index === 2) {
-//     prices[index] = prices[index] * 2;
-//   }
-//   //change the value of seventh element
-//   else if (index === 6) {
-//     prices[index] = prices[index] * 2;
-//   }
-// }
-// console.log(prices);
-// const team1 = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter"];
-// const team2 = ["George Weasley", "Fred Weasley", "Harry Potter"];
-// const team3 = [];
-// const team4 = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter", "Hermione Granger", "Ron Weasley", "Neville Longbottom"];
+const prices = [1.23, 48.11, 90.11, 8.50, 9.99, 1.00, 1.10, 67.00];
+for (let index = 0; index < prices.length; index++){
+  //change the value of first element
+  if (index === 0) {
+    prices[index] = prices[index] * 2;
+  }
+  //change the value of third element
+  else if (index === 2) {
+    prices[index] = prices[index] * 2;
+  }
+  //change the value of seventh element
+  else if (index === 6) {
+    prices[index] = prices[index] * 2;
+  }
+}
+console.log(prices);
+const team1 = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter"];
+const team2 = ["George Weasley", "Fred Weasley", "Harry Potter"];
+const team3 = [];
+const team4 = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter", "Hermione Granger", "Ron Weasley", "Neville Longbottom"];
 
-// function hasEnoughPlayers(team) {
-//         if (team.length >= 7) {
-//             console.log(true);
-//         }
-//         else {
-//             console.log(false);
-//         }
-//     }
-// hasEnoughPlayers(team1);
-// hasEnoughPlayers(team2);
-// hasEnoughPlayers(team3);
-// hasEnoughPlayers(team4);
+function hasEnoughPlayers(team) {
+        if (team.length >= 7) {
+            console.log(true);
+        }
+        else {
+            console.log(false);
+        }
+    }
+hasEnoughPlayers(team1);
+hasEnoughPlayers(team2);
+hasEnoughPlayers(team3);
+hasEnoughPlayers(team4);
 
 
 // const test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4, 19, 300, 3775, 299, 36, 209, 148, 169, 299, 6, 109, 20, 58, 139, 59, 3, 1, 139];
@@ -328,20 +328,20 @@ to get and set content? */
 
 
 
-test.forEach(function);
-const bills = [50.23, 19.12, 34.01, 100.11, 12.15, 9.90, 29.11, 12.99, 10.00, 99.22, 102.20, 100.10, 6.77, 2.22];
+// test.forEach(function);
+// const bills = [50.23, 19.12, 34.01, 100.11, 12.15, 9.90, 29.11, 12.99, 10.00, 99.22, 102.20, 100.10, 6.77, 2.22];
 
-const totals = bills.map(function (item, i) {
-    // if (item % 3 === 0) {
-    //   console.log("Element at index " + index + " is divisible by 3");
-    //   test[index] = test[index] + 100;
-    // } else {
-        item *= 0.15
-        item = bills[i] + item
-      return (Number(item.toFixed(2)));
-    // } 
-  });
-  console.log(totals)
+// const totals = bills.map(function (item, i) {
+//     // if (item % 3 === 0) {
+//     //   console.log("Element at index " + index + " is divisible by 3");
+//     //   test[index] = test[index] + 100;
+//     // } else {
+//         item *= 0.15
+//         item = bills[i] + item
+//       return (Number(item.toFixed(2)));
+//     // } 
+//   });
+//   console.log(totals)
 
 
 // var grid = [
