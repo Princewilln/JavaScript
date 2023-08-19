@@ -374,33 +374,33 @@ to get and set content? */
 
 
 
-// const umbrella = { 
-//     color: "pink",
-//     isOpen: false,
-//     open: function() { 
-//       if (umbrella.isOpen === true) {
-//         return "The umbrella is already opened!";
-//       } else {
-//         umbrella.isOpen = true;
-//         return "Julia opens the umbrella!";
-//       }
-//      },
+const umbrella = { 
+    color: "pink",
+    isOpen: false,
+    open: function() { 
+      if (umbrella.isOpen === true) {
+        return "The umbrella is already opened!";
+      } else {
+        umbrella.isOpen = true;
+        return "Julia opens the umbrella!";
+      }
+     },
     
-//     close: function() {
-//         if (umbrella.isOpen === true) {
-//           umbrella.isOpen = false;
-//           return "Julia closes the umbrella!";
-//         } else {
-//           return "The umbrella is already closed!";
-//         }
-//       } 
+    close: function() {
+        if (umbrella.isOpen === true) {
+          umbrella.isOpen = false;
+          return "Julia closes the umbrella!";
+        } else {
+          return "The umbrella is already closed!";
+        }
+      } 
 
-//   };
+  };
 
-//  console.log (umbrella.isOpen); // returns false
-//  console.log(umbrella.open());
-//   console.log(umbrella.close());
-//   console.log(umbrella.isOpen);
+ console.log (umbrella.isOpen); // returns false
+ console.log(umbrella.open());
+  console.log(umbrella.close());
+  console.log(umbrella.isOpen);
 
 //   const breakfast = {
 
@@ -411,26 +411,26 @@ to get and set content? */
 
 
 
-  const savingsAccount = {
-    balance: 1000,
-    interestRatePercent: 1,
-    printAccountSummary: function() {
-       return "Welcome!\nYour balance is currently $"+savingsAccount.balance+ " and your interest rate is " +savingsAccount.interestRatePercent+ "%."
-    },
-    deposit: function addMoney(amount) {
-      if (amount > 0) {
-        savingsAccount.balance += amount;
-      }
-    },
-    withdraw: function removeMoney(amount) {
-      var verifyBalance = savingsAccount.balance - amount;
-      if (amount > 0 && verifyBalance >= 0) {
-        savingsAccount.balance -= amount;
-      }
-    }
+//   const savingsAccount = {
+//     balance: 1000,
+//     interestRatePercent: 1,
+//     printAccountSummary: function() {
+//        return "Welcome!\nYour balance is currently $"+savingsAccount.balance+ " and your interest rate is " +savingsAccount.interestRatePercent+ "%."
+//     },
+//     deposit: function addMoney(amount) {
+//       if (amount > 0) {
+//         savingsAccount.balance += amount;
+//       }
+//     },
+//     withdraw: function removeMoney(amount) {
+//       var verifyBalance = savingsAccount.balance - amount;
+//       if (amount > 0 && verifyBalance >= 0) {
+//         savingsAccount.balance -= amount;
+//       }
+//     }
 
-  };
-  console.log(savingsAccount.printAccountSummary())
+//   };
+//   console.log(savingsAccount.printAccountSummary())
 
 // const facebookProfile = {
 //     name: "Princewill",
