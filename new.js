@@ -432,70 +432,70 @@ to get and set content? */
 //   };
 //   console.log(savingsAccount.printAccountSummary())
 
-// const facebookProfile = {
-//     name: "Princewill",
-//     friends: 7,
-//     messages: ["My first post in a long time", "I just wanted to make this post to says high to you all"],
-//     postMessage: function(message){
-//        message = "this is my todays dump for fb";
-//       return  facebookProfile.messages.push(message);
-//     //    console.log(messages);
-//     },
-//     deleteMessage: function(index){
-//         index = facebookProfile.messages[0];
-        
-//       return   facebookProfile.messages.splice(index, 1); 
-//     },
-//     addFriend: function(){
-//         return facebookProfile.friends += 1; 
-
-//     },
-//     removeFriend: function(){
-
-//         return facebookProfile.friends -=1;
-
-//     }
-// };
-// console.log("Name: ", facebookProfile.name);
-// console.log("Messages: ", facebookProfile.messages);
-// console.log("my facebook post ", facebookProfile.postMessage());
-// console.log(facebookProfile.deleteMessage());
-// console.log(facebookProfile.addFriend());
-// console.log(facebookProfile.removeFriend());
-
-
-
 const facebookProfile = {
-    name: "Udacian",
-    friends: 25,
-    messages: ["Message 1", "Message 2", "Message 3", "Message 4"],
+    name: "Princewill",
+    friends: 7,
+    messages: ["My first post in a long time", "I just wanted to make this post to says high to you all"],
     postMessage: function(message){
-        facebookProfile.messages.push(message);
+       message = "this is my todays dump for fb";
+      return  facebookProfile.messages.push(message);
+    //    console.log(messages);
     },
     deleteMessage: function(index){
-        // In the following splice() method call,
-        // - argument 1 = index from where the element has to be deleted
-        // - argument 2 = count of elements to be deleted
-        facebookProfile.messages.splice(index, 1);
+        index = facebookProfile.messages[0];
+        
+      return   facebookProfile.messages.splice(index, 1); 
     },
     addFriend: function(){
-        facebookProfile.friends = facebookProfile.friends + 1;
-        //friends += 1; // this statement is equivalent to the above
+        return facebookProfile.friends += 1; 
+
     },
     removeFriend: function(){
-        if(facebookProfile.friends>0)
-            facebookProfile.friends = facebookProfile.friends - 1;
+
+        return facebookProfile.friends -=1;
+
     }
 };
-
 console.log("Name: ", facebookProfile.name);
 console.log("Messages: ", facebookProfile.messages);
-facebookProfile.postMessage("New message!");
-console.log("Messages: ",  facebookProfile.messages);
-facebookProfile.deleteMessage(2);
-console.log("Messages: ",  facebookProfile.messages);
-console.log("Friends: ", facebookProfile.friends);
-facebookProfile.addFriend();
-console.log("Friends: ", facebookProfile.friends);
-facebookProfile.removeFriend();
-console.log("Friends: ", facebookProfile.friends);
+console.log("my facebook post ", facebookProfile.postMessage());
+console.log(facebookProfile.deleteMessage());
+console.log(facebookProfile.addFriend());
+console.log(facebookProfile.removeFriend());
+
+
+
+// const facebookProfile = {
+//     name: "Udacian",
+//     friends: 25,
+//     messages: ["Message 1", "Message 2", "Message 3", "Message 4"],
+//     postMessage: function(message){
+//         facebookProfile.messages.push(message);
+//     },
+//     deleteMessage: function(index){
+//         // In the following splice() method call,
+//         // - argument 1 = index from where the element has to be deleted
+//         // - argument 2 = count of elements to be deleted
+//         facebookProfile.messages.splice(index, 1);
+//     },
+//     addFriend: function(){
+//         facebookProfile.friends = facebookProfile.friends + 1;
+//         //friends += 1; // this statement is equivalent to the above
+//     },
+//     removeFriend: function(){
+//         if(facebookProfile.friends>0)
+//             facebookProfile.friends = facebookProfile.friends - 1;
+//     }
+// };
+
+// console.log("Name: ", facebookProfile.name);
+// console.log("Messages: ", facebookProfile.messages);
+// facebookProfile.postMessage("New message!");
+// console.log("Messages: ",  facebookProfile.messages);
+// facebookProfile.deleteMessage(2);
+// console.log("Messages: ",  facebookProfile.messages);
+// console.log("Friends: ", facebookProfile.friends);
+// facebookProfile.addFriend();
+// console.log("Friends: ", facebookProfile.friends);
+// facebookProfile.removeFriend();
+// console.log("Friends: ", facebookProfile.friends);
