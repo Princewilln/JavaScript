@@ -411,57 +411,57 @@ to get and set content? */
 
 
 
-//   const savingsAccount = {
-//     balance: 1000,
-//     interestRatePercent: 1,
-//     printAccountSummary: function() {
-//        return "Welcome!\nYour balance is currently $"+savingsAccount.balance+ " and your interest rate is " +savingsAccount.interestRatePercent+ "%."
-//     },
-//     deposit: function addMoney(amount) {
-//       if (amount > 0) {
-//         savingsAccount.balance += amount;
-//       }
-//     },
-//     withdraw: function removeMoney(amount) {
-//       var verifyBalance = savingsAccount.balance - amount;
-//       if (amount > 0 && verifyBalance >= 0) {
-//         savingsAccount.balance -= amount;
-//       }
-//     }
-
-//   };
-//   console.log(savingsAccount.printAccountSummary())
-
-const facebookProfile = {
-    name: "Princewill",
-    friends: 7,
-    messages: ["My first post in a long time", "I just wanted to make this post to says high to you all"],
-    postMessage: function(message){
-       message = "this is my todays dump for fb";
-      return  facebookProfile.messages.push(message);
-    //    console.log(messages);
+  const savingsAccount = {
+    balance: 1000,
+    interestRatePercent: 1,
+    printAccountSummary: function() {
+       return "Welcome!\nYour balance is currently $"+savingsAccount.balance+ " and your interest rate is " +savingsAccount.interestRatePercent+ "%."
     },
-    deleteMessage: function(index){
-        index = facebookProfile.messages[0];
-        
-      return   facebookProfile.messages.splice(index, 1); 
+    deposit: function addMoney(amount) {
+      if (amount > 0) {
+        savingsAccount.balance += amount;
+      }
     },
-    addFriend: function(){
-        return facebookProfile.friends += 1; 
-
-    },
-    removeFriend: function(){
-
-        return facebookProfile.friends -=1;
-
+    withdraw: function removeMoney(amount) {
+      var verifyBalance = savingsAccount.balance - amount;
+      if (amount > 0 && verifyBalance >= 0) {
+        savingsAccount.balance -= amount;
+      }
     }
-};
-console.log("Name: ", facebookProfile.name);
-console.log("Messages: ", facebookProfile.messages);
-console.log("my facebook post ", facebookProfile.postMessage());
-console.log(facebookProfile.deleteMessage());
-console.log(facebookProfile.addFriend());
-console.log(facebookProfile.removeFriend());
+
+  };
+  console.log(savingsAccount.printAccountSummary())
+
+// const facebookProfile = {
+//     name: "Princewill",
+//     friends: 7,
+//     messages: ["My first post in a long time", "I just wanted to make this post to says high to you all"],
+//     postMessage: function(message){
+//        message = "this is my todays dump for fb";
+//       return  facebookProfile.messages.push(message);
+//     //    console.log(messages);
+//     },
+//     deleteMessage: function(index){
+//         index = facebookProfile.messages[0];
+        
+//       return   facebookProfile.messages.splice(index, 1); 
+//     },
+//     addFriend: function(){
+//         return facebookProfile.friends += 1; 
+
+//     },
+//     removeFriend: function(){
+
+//         return facebookProfile.friends -=1;
+
+//     }
+// };
+// console.log("Name: ", facebookProfile.name);
+// console.log("Messages: ", facebookProfile.messages);
+// console.log("my facebook post ", facebookProfile.postMessage());
+// console.log(facebookProfile.deleteMessage());
+// console.log(facebookProfile.addFriend());
+// console.log(facebookProfile.removeFriend());
 
 
 
