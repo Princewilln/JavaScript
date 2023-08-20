@@ -511,7 +511,8 @@ const donuts = [
   ];
   
   donuts.forEach(donut => {
-    console.log(`${donut.type} donut costs $${donut.cost.toFixed(2)} each`);
+    // console.log(`${donut.type} donut costs $${donut.cost.toFixed(2)} each`);
+    console.log(donut.type + " donut costs $" + donut.cost.toFixed(2) + " each");
   });
 
 
