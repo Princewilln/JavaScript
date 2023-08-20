@@ -280,39 +280,39 @@ to get and set content? */
 // console.log(laugh(5))
 
 
-const prices = [1.23, 48.11, 90.11, 8.50, 9.99, 1.00, 1.10, 67.00];
-for (let index = 0; index < prices.length; index++){
-  //change the value of first element
-  if (index === 0) {
-    prices[index] = prices[index] * 2;
-  }
-  //change the value of third element
-  else if (index === 2) {
-    prices[index] = prices[index] * 2;
-  }
-  //change the value of seventh element
-  else if (index === 6) {
-    prices[index] = prices[index] * 2;
-  }
-}
-console.log(prices);
-const team1 = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter"];
-const team2 = ["George Weasley", "Fred Weasley", "Harry Potter"];
-const team3 = [];
-const team4 = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter", "Hermione Granger", "Ron Weasley", "Neville Longbottom"];
+// const prices = [1.23, 48.11, 90.11, 8.50, 9.99, 1.00, 1.10, 67.00];
+// for (let index = 0; index < prices.length; index++){
+//   //change the value of first element
+//   if (index === 0) {
+//     prices[index] = prices[index] * 2;
+//   }
+//   //change the value of third element
+//   else if (index === 2) {
+//     prices[index] = prices[index] * 2;
+//   }
+//   //change the value of seventh element
+//   else if (index === 6) {
+//     prices[index] = prices[index] * 2;
+//   }
+// }
+// console.log(prices);
+// const team1 = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter"];
+// const team2 = ["George Weasley", "Fred Weasley", "Harry Potter"];
+// const team3 = [];
+// const team4 = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter", "Hermione Granger", "Ron Weasley", "Neville Longbottom"];
 
-function hasEnoughPlayers(team) {
-        if (team.length >= 7) {
-            console.log(true);
-        }
-        else {
-            console.log(false);
-        }
-    }
-hasEnoughPlayers(team1);
-hasEnoughPlayers(team2);
-hasEnoughPlayers(team3);
-hasEnoughPlayers(team4);
+// function hasEnoughPlayers(team) {
+//         if (team.length >= 7) {
+//             console.log(true);
+//         }
+//         else {
+//             console.log(false);
+//         }
+//     }
+// hasEnoughPlayers(team1);
+// hasEnoughPlayers(team2);
+// hasEnoughPlayers(team3);
+// hasEnoughPlayers(team4);
 
 
 // const test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4, 19, 300, 3775, 299, 36, 209, 148, 169, 299, 6, 109, 20, 58, 139, 59, 3, 1, 139];
@@ -344,7 +344,7 @@ hasEnoughPlayers(team4);
 //   console.log(totals)
 
 
-// var grid = [
+// const grid = [
 //     [243, 12, 23, 12, 45, 45, 78, 66, 223, 3],
 //     [34, 2, 1, 553, 23, 4, 66, 23, 4, 55],
 //     [67, 56, 45, 553, 44, 55, 5, 428, 452, 3],
@@ -501,3 +501,18 @@ hasEnoughPlayers(team4);
 // console.log("Friends: ", facebookProfile.friends);
 // facebookProfile.removeFriend();
 // console.log("Friends: ", facebookProfile.friends);
+
+
+const donuts = [
+    { type: "Jelly", cost: 1.22 },
+    { type: "Chocolate", cost: 2.45 },
+    { type: "Cider", cost: 1.59 },
+    { type: "Boston Cream", cost: 5.99 }
+  ];
+  
+  donuts.forEach(donut => {
+    console.log(`${donut.type} donut costs $${donut.cost.toFixed(2)} each`);
+  });
+
+
+ 
