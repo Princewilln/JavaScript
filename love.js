@@ -35,7 +35,7 @@ else {
 
 myCrush();
 
-
+console.log(myCrush());
 // Requirements:
 
 // Prompt the user to input their name and the name of their crush/partner.
