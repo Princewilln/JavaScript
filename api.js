@@ -1,4 +1,5 @@
 //fetch API
+
 const myDiv = document.getElementById("planet");
 const myButton = myDiv.querySelector("button");
 
@@ -6,7 +7,7 @@ myButton.addEventListener("click", getPlanet);
 
 function getPlanet() {
   const randomNum = Math.floor(Math.random() * 10) + 1; // Generate a random number between 1 and 60
-  fetch(`https://swapi.dev/api/planets/${randomNum}/`)
+  fetch(`https://swapi.py4e.com/api/planets/${randomNum}/`)
       .then(data => data.json())
       .then(d => {
         console.log(d); // Check the fetched data in the console
@@ -17,6 +18,6 @@ function getPlanet() {
 
 function populatePlanet(planetObj) {
   const newParagraph = document.createElement("p");
-  newParagraph.innerText = `Planet Name: ${planetObj.name}`;
+  newParagraph.innerText = `Planet Name: ${planetObj.name}, and population: ${planetObj.population}`;
   myDiv.appendChild(newParagraph);
 }
