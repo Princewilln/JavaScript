@@ -1,6 +1,36 @@
-arr = [2,1,3,5,4];
+function getMinPerformers(startTime, endTime) {
+    let events = [];
 
-function miniMaxSum(arr){
+    // Step 1: Create events for start and end times
+    for (let i = 0; i < startTime.length; i++) {
+        events.push([startTime[i], 1]);  // Start time: +1 performer
+        events.push([endTime[i] + 1, -1]); // End time: -1 performer
+    }
+
+    // Step 2: Sort events by time
+    events.sort((a, b) => {
+        if (a[0] === b[0]) {
+            return a[1] - b[1]; // Process -1 before +1 if times are the same
+        }
+        return a[0] - b[0];
+    });
+
+    // Step 3: Sweep through events to find maximum overlap
+    let currentPerformers = 0;
+    let maxPerformers = 0;
+
+    for (let event of events) {
+        currentPerformers += event[1];
+        maxPerformers = Math.max(maxPerformers, currentPerformers);
+    }
+
+    return maxPerformers;
+}
+console.log("Minimum performers required:", getMinPerformers(startTime, endTime));
+
+// arr = [2,1,3,5,4];
+
+// function miniMaxSum(arr){
          // Write your code here
     // I am given an array of positive intergers e.g arr = [1, 3,5,7,9]
     // The want the minimum value that i can get by adding together four numbersof of the 5 intergers
@@ -16,23 +46,23 @@ function miniMaxSum(arr){
     // and to add numbers from array[1] to array.length-1 to get the sum of maximum nums
 
 
-    let SumOfMinNums = 0;
-    let SumOfMaxNums = 0;
+//     let SumOfMinNums = 0;
+//     let SumOfMaxNums = 0;
 
- arr.sort(function(a, b){
-    return a - b;
-})
-  for(let i = 0; i < arr.length-1; i++){
-      SumOfMinNums += arr[i];  
-}
-for (let i = 1; i < arr.length; i++){
-    //console.log(arr[i]);
-    SumOfMaxNums += arr[i];
-}
-console.log(SumOfMinNums.toString() + " " + SumOfMaxNums.toString());
-}
+//  arr.sort(function(a, b){
+//     return a - b;
+// })
+//   for(let i = 0; i < arr.length-1; i++){
+//       SumOfMinNums += arr[i];  
+// }
+// for (let i = 1; i < arr.length; i++){
+//     //console.log(arr[i]);
+//     SumOfMaxNums += arr[i];
+// }
+// console.log(SumOfMinNums.toString() + " " + SumOfMaxNums.toString());
+// }
 
-miniMaxSum(arr);
+// miniMaxSum(arr);
 // arr = arr.sort(function(a, b){
 //     return a - b;
 // })

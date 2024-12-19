@@ -1,0 +1,25 @@
+Description
+This job's time zone is Central.
+Company are currently seeking a dynamic Azure Cloud Administrator to join our client's team. The ideal candidate will be responsible for managing and supporting an enterprise cloud environment. This is a contract-to-hire opportunity that requires a hybrid schedule in Houston, TX.
+
+Responsibilities:
+
+Designing, managing, and maintaining tools for automation of different operational processes in Microsoft Azure.
+Providing architectural recommendations for secure, high-performing cloud applications and infrastructure.
+Conducting system performance tuning and capacity planning.
+Managing cloud servers, including security configurations, patching, and troubleshooting.
+Implementing enterprise-wide backup and disaster recovery solutions.
+Working with development teams to help codify security and compliance controls.
+Collaborating with teams to identify and implement new cloud technologies.
+
+
+Requirements
+Qualifications:
+
+A Bachelor’s degree in Computer Science, Information Technology, or related field.
+Minimum of 5 years’ experience in Azure Cloud Services.
+Microsoft Certified: Azure Administrator Associate certification preferred.
+Experience with Infrastructure as Code (IAC) tools is a plus.
+Deep understanding of network, security, processing power, and storage in the context of a cloud environment.
+Excellent problem-solving skills.
+Exceptional communication and interpersonal skills.
